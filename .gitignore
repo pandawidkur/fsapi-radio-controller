@@ -1,0 +1,7 @@
+build/
+*.app
+.DS_Store
+*.zip
+homelab/radio-scheduler/token
+homelab/radio-scheduler/*.json
+__pycache__/

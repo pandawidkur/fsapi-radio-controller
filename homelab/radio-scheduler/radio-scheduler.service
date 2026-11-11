@@ -1,0 +1,20 @@
+[Unit]
+Description=FSAPI radio scheduler (plays planned shows)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/radio-scheduler
+ExecStart=/usr/bin/python3 %h/radio-scheduler/scheduler.py
+# The radio's IP address and NetRemote PIN (install.sh fills these in).
+Environment=RADIO_HOST=__RADIO_HOST__
+Environment=RADIO_PIN=__RADIO_PIN__
+Environment=PORT=8735
+# Volume set when a planned show starts (0-32 on most FSAPI radios).
+Environment=VOLUME=14
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=default.target
