@@ -5,6 +5,10 @@ It adds what the remote and UNDOK lack: live schedules and playlists of your fav
 
 English and Polish UI (follows the system language, can be switched in Settings).
 
+[![Watch the 24-second demo](docs/promo-poster.png)](docs/promo.mp4)
+
+[Watch the 24-second demo (MP4)](docs/promo.mp4)
+
 ## Features
 
 - **Menu bar control**: power, volume (1-step slider, ±, scroll over the icon), mute.

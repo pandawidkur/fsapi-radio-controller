@@ -5,3 +5,4 @@ build/
 homelab/radio-scheduler/token
 homelab/radio-scheduler/*.json
 __pycache__/
+pieces/
